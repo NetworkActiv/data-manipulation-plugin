@@ -123,7 +123,7 @@ const WCHAR * PluginBase::GetPluginDescriptionInternal()
 
 const WCHAR * PluginBase::GetPluginVersionInternal()
 {
-	return L"1.0.0";
+	return L"1.0.1";
 }
 
 SettingsBase Settings;
