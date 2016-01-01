@@ -1,0 +1,14 @@
+LIBRARY	NA_Plugin_DataManipulation.dll
+EXPORTS
+   GetPluginType            @1
+   GetPluginTypeCmd         @2
+   GetPluginName            @3
+   GetPluginNameCmd         @4
+   GetPluginVersion         @5
+   GetPluginVersionCmd      @6
+   GetPluginDescription     @7
+   GetPluginDescriptionCmd  @8
+   ProcessUpstreamData      @9
+   ProcessUpstreamDataCmd   @10
+   ProcessDownstreamData    @11
+   ProcessDownstreamDataCmd @12
