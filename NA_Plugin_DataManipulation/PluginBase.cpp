@@ -73,7 +73,7 @@ void PluginBase::ProcessUpstreamDataCmd(HINSTANCE hinst, LPSTR InBuffer, int nCm
 	}
 	else {
 		std::string ReturnString = std::string(ReturnValue->Buffer, ReturnValue->BytesReceived);
-		MessageBox(NULL, UTF8ToUTF16(ReturnString.c_str()).c_str(), (std::to_wstring(ReturnValue->BytesReceived) + L" bytes returned").c_str(), MB_OK);
+		MessageBox(NULL, UTF8ToUTF16(ReturnString.c_str()).c_str(), (std::to_wstring(ReturnValue->BytesReceived) + L" bytes returned at " + GetCurrentDateTimeW()).c_str(), MB_OK);
 	}
 	delete NewBuffer;
 }
@@ -101,7 +101,7 @@ void PluginBase::ProcessDownstreamDataCmd(HINSTANCE hinst, LPSTR InBuffer, int n
 	}
 	else {
 		std::string ReturnString = std::string(ReturnValue->Buffer, ReturnValue->BytesReceived);
-		MessageBox(NULL, UTF8ToUTF16(ReturnString.c_str()).c_str(), (std::to_wstring(ReturnValue->BytesReceived) + L" bytes returned").c_str(), MB_OK);
+		MessageBox(NULL, UTF8ToUTF16(ReturnString.c_str()).c_str(), (std::to_wstring(ReturnValue->BytesReceived) + L" bytes returned at " + GetCurrentDateTimeW()).c_str(), MB_OK);
 	}
 	delete NewBuffer;
 }
